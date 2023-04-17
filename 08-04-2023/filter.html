@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                // $("div").filter(".p4").addClass("myclass")
+                // $("div").first().addClass("myclass")
+                // $("div").last().addClass("myclass")
+                // $("div").eq(1).addClass("myclass")
+                $("div").not(".p3").addClass("myclass")
+            })
+        })
+    </script>
+
+    <style>
+        .myclass {
+            color: red;
+        }
+
+        div {
+            font-size: 18px;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- total 5 functions in filter => filter(),first(),last(),eq(), not() -->
+    <button class="btn1">Click Here</button>
+
+    <hr>
+    <div class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis molestias libero est maxime
+        nostrum.
+        Odit
+        consequatur provident accusamus animi id totam voluptas dolorum corrupti, autem doloremque non temporibus
+        ducimus cupiditate!</div>
+
+    <div class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis commodi error, excepturi labore
+        quidem iure
+        eaque facere, asperiores inventore ipsa repudiandae dolores quibusdam officiis libero accusantium eius repellat
+        ab suscipit. </div>
+
+    <div class="p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati tempore cumque eaque
+        perspiciatis,
+        dolor id vitae! Velit omnis quam iusto maiores delectus eligendi vero commodi! Ad beatae eum cum vel.</div>
+
+    <div class="p4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut odio temporibus, quos nihil omnis sit
+        sequi
+        quis eligendi debitis alias expedita fugiat voluptatibus numquam, esse rerum veritatis, molestias ipsa
+        consequatur?</div>
+</body>
+
+</html>
