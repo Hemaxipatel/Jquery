@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BxSlider</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- bxSlider cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <!-- bxSlider css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <style>
+        img {
+            height: 620px;
+            width: 100%;
+        }
+    </style>
+    <script>
+        // $(document).ready(function())
+        $(function () {
+            $('.bxslider').bxSlider({
+                mode: 'fade',        //bydeafult mode:'horizontal'
+                speed: 1000,
+                controls: false
+                // auto: true,
+                // autoHover: true
+                // mode: 'vertical',
+                // captions: true,
+                // slideWidth: 600                
+                // pager: false
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="bxslider">
+        <div class="sub">
+            <img src="images/img1.avif" alt="">
+        </div>
+        <div class="sub">
+            <img src="images/img2.jpg" alt="">
+        </div>
+        <div class="sub">
+            <img src="images/img3.jpg" alt="">
+        </div>
+        <div class="sub">
+            <img src="images/img4.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
