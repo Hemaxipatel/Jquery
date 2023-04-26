@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback function</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        // callback means call function in jquery functions.
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("h1").hide(2000, function () {
+                    alert("Callback function run successfully!!!!")
+                })
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn1">Click Here</button>
+
+    <hr>
+    <h1>Callback Function</h1>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0px 80px;
+}
+
+/* ============== header ================= */
+header {
+    /* background-color: palegoldenrod; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 111111;
+}
+
+.header-fixed {
+    background-color: lightblue;
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    z-index: 111111;
+}
+
+header .header-p {
+    padding: 20px 0px;
+}
+
+header .header-flex {
+    display: flex;
+    align-items: center;
+}
+
+header .header-flex .logo {
+    flex: 0.5;
+}
+
+header .header-flex .logo h1 a {
+    color: white;
+}
+
+header .header-flex .nav-bar {
+    flex: 2;
+}
+
+header .header-flex .nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .header-flex .nav-bar ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+header .header-flex .theme {
+    display: flex;
+    flex: 0.5;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+header .header-flex .theme span {
+    font-size: 22px;
+    color: white;
+}
+
+header .header-flex .theme button {
+    display: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: royalblue;
+    border: 1px solid royalblue;
+    position: relative;
+}
+
+/* =========== home img =============== */
+img {
+    height: 800px;
+    width: 100%;
+}
+
+
+/* ============= randomly class generated for toggle button ================= */
+
+header .header-flex .nav-change {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+header .header-flex .nav-change ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header .header-flex .nav-change ul li {
+    line-height: 40px;
+}
+
+header .header-flex .nav-change ul li a {
+    color: black;
+}
+
+header .header-flex .nav-change ul li::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: crimson;
+    display: block;
+}
+
+/* ============= media query =============== */
+@media (max-width:576px) {
+    .container {
+        margin: 0px 30px;
+    }
+
+    header .header-flex .nav-bar {
+        display: none;
+    }
+
+    header .header-flex .theme button {
+        display: block;
+    }
+
+    header .header-flex .nav-change {
+        display: block;
+    }
+}
