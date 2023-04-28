@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        // height width work with content
+        // innerheight & innerwidth work with padding & content
+        // outerheight & outerwidth work with padding, border & content
+        // outerheight & outerwidth value is true show padding, border, margin & content
+        $(document).ready(function () {
+            // $(".div1").height(500) // used for draw
+            $txt = "";
+            $txt = "height:" + $(".div1").height() +
+                "<br> width:" + $(".div1").width() +
+                "<br> innerHeight:" + $(".div1").innerHeight() +
+                "<br> innerWidth:" + $(".div1").innerWidth() +
+                "<br> outerHeight:" + $(".div1").outerHeight() +
+                "<br> outerWidth:" + $(".div1").outerWidth();
+            $(".div1").html($txt);
+
+            $(".div2").height(100).width(200).innerHeight(50).innerWidth(50);
+        })
+    </script>
+    <style>
+        .div1 {
+            height: 300px;
+            width: 400px;
+            border: 2px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ex nihil sequi enim molestiae
+        hic laboriosam ipsum, odit nostrum deserunt assumenda cumque repellendus, perspiciatis nobis suscipit tenetur
+        et! Voluptatem, distinctio?</div>
+</body>
+
+</html>
