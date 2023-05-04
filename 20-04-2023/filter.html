@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        div {
+            height: 150px;
+            width: 400px;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        .changeValue {
+            font-size: 20px;
+            background-color: aqua;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // $("div").filter(".div2").addClass("changeValue")
+                // $("div").first().addClass("changeValue")
+                // $("div").last().addClass("changeValue")
+                // $("div").eq(2).addClass("changeValue")
+                $("div").not(".div3").addClass("changeValue")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn1">Filter Value</button>
+    <hr>
+
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eum consequuntur, perspiciatis mollitia est
+        ipsum tenetur adipisci modi quod, alias voluptatem error? Quasi quam facere cumque, ipsam eos autem labore?
+    </div>
+    <div class="div2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ad quibusdam, numquam earum harum nobis ex
+        assumenda impedit dolorem laudantium adipisci sequi laborum ducimus, distinctio laboriosam deleniti omnis aut
+        illo?
+    </div>
+    <div class="div3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo aperiam atque laboriosam at nobis eius
+        nulla. Id eius rem fugiat cupiditate. Similique corrupti deserunt vero nihil magnam sed repudiandae
+        necessitatibus.
+    </div>
+    <div class="div4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nisi aliquid tempora ullam reiciendis
+        accusamus voluptatem numquam labore, tenetur quod, aspernatur at distinctio ipsa velit facilis quidem deleniti
+        obcaecati porro.
+    </div>
+</body>
+
+</html>
